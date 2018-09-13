@@ -19,5 +19,7 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
+        System.out.println("aaaaaaaaaa");
+        System.out.println("aaaaaa");
     }
 }
