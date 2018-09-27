@@ -14,33 +14,38 @@ public class Fraction {
 
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        tuso = tuso*other.mauso + mauso * other.tuso;
-        mauso= mauso*other.mauso;
-        return null;
+        Fraction psm = new Fraction();
+        psm.tuso = tuso*other.mauso + mauso * other.tuso;
+        psm.mauso= mauso*other.mauso;
+        return psm;
     }
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        tuso = tuso*other.mauso - mauso * other.tuso;
-        mauso= mauso*other.mauso;
-        return null;
+        Fraction psm = new Fraction();
+        psm.tuso = tuso*other.mauso - mauso * other.tuso;
+        psm.mauso= mauso*other.mauso;
+        return psm;
     }
 
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        tuso = tuso*other.tuso;
-        mauso= mauso*other.mauso;
-        return null;
+        Fraction psm = new Fraction();
+        psm.tuso = tuso*other.tuso;
+        psm.mauso= mauso*other.mauso;
+        return psm;
     }
 
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        tuso = tuso*other.mauso;
-        mauso= mauso*other.tuso;
-        return null;
+        Fraction psm = new Fraction();
+        psm.tuso = tuso*other.mauso;
+        psm.mauso= mauso*other.tuso;
+        return psm;
     }
     public boolean assertEquals(Fraction ps1, Fraction ps2){
-        if((ps1.tuso*ps2.mauso) == (ps1.mauso * ps2.mauso)) return true; else return false;
+        if((ps1.tuso*ps2.mauso) == (ps1.mauso * ps2.mauso)) return true;
+        else return false;
     }
 
 //    public static void main(String[] args) {
