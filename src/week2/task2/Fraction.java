@@ -14,7 +14,7 @@ public class Fraction {
 
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction psm = new Fraction();
+        Fraction psm = new Fraction(0,1);
         psm.tuso = tuso*other.mauso + mauso * other.tuso;
         psm.mauso= mauso*other.mauso;
         return psm;
@@ -22,7 +22,7 @@ public class Fraction {
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction psm = new Fraction();
+        Fraction psm = new Fraction(0,1);
         psm.tuso = tuso*other.mauso - mauso * other.tuso;
         psm.mauso= mauso*other.mauso;
         return psm;
@@ -30,7 +30,7 @@ public class Fraction {
 
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction psm = new Fraction();
+        Fraction psm = new Fraction(0,1);
         psm.tuso = tuso*other.tuso;
         psm.mauso= mauso*other.mauso;
         return psm;
@@ -38,7 +38,7 @@ public class Fraction {
 
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction psm = new Fraction();
+        Fraction psm = new Fraction(0,1);
         psm.tuso = tuso*other.mauso;
         psm.mauso= mauso*other.tuso;
         return psm;
@@ -50,9 +50,10 @@ public class Fraction {
 
 //    public static void main(String[] args) {
 //        Fraction ps1 =  new Fraction(1,2);
+//        Fraction psm =  new Fraction(0,1);
 //        Fraction ps2 =  new Fraction(3,4);
-//        //ps1.add(ps2);
+//        psm=ps1.add(ps2);
 //        //ps1.subtract(ps2);
-//        System.out.println(ps1.tuso +"/" + ps1.mauso+"\n");
+//        System.out.println(psm.tuso +"/" + psm.mauso+"\n");
 //    }
 }
